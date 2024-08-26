@@ -8,7 +8,7 @@ async function buscarPokemon(query) {
         }
 
         const pokemon = await response.json();
-        mostrarPokemones([pokemon]); // Pasamos el Pokémon en un array para reutilizar la función
+        mostrarPokemones([pokemon]);
         console.log(pokemon);
     } catch (error) {
         alert(error.message);
